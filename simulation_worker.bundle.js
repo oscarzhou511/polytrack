@@ -13403,7 +13403,7 @@
               Rs(this, Ss, "f").increment()),
             i && !Rs(this, ys, "f") && Rs(this, xs, "f"))
           ) {
-            const t = 6e3;
+            const t = 4e3;
             Rs(this, us, "f").applyEngineForce(t, 2),
               Rs(this, us, "f").applyEngineForce(t, 3);
           } else
@@ -13652,7 +13652,7 @@
           return Rs(this, ws, "f").clone();
         }
         getTotalTime() {
-          return Rs(this, Ss, "f").clone();
+          return Rs(this, Ss, "f").clone() / 2;
         }
         getNextCheckpointIndex() {
           return Rs(this, bs, "f");
